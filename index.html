@@ -2,114 +2,434 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamanzi Thierry - Cybersecurity Enthusiast & Software Engineer portfolio">
     <title>Kamanzi Thierry | Cybersecurity & Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="intro">
-        <h1>Hello, I'm <span>Kamanzi Thierry</span></h1>
-        <p>Cybersecurity Enthusiast & Software Engineer</p>
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="cv/CURRICULUM VITAE.pdf" class="btn" download>Download CV</a>
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">KT<span>.</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-       Dedicated Software Engineer with strong cybersecurity knowledge.
-       Experienced in developing secure, efficient software solutions and applying best practices in coding,network security, and risk mitigation.
-       Skilled in problem-solving, analytical thinking, and implementing secure software architectures.
-       Passionate about building robust applications while ensuring data protection, threat analysis, and system
-       security. Ready to contribute to innovative software projects in secure environments.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill">
-            <h3>Cybersecurity</h3>
-            <ul>
-                <li>Wazuh SIEM Deployment</li>
-                <li>ZeroTier Secure Networking</li>
-                <li>BIND DNS Server</li>
-                <li>Linux & FreeBSD Hardening</li>
-                <li>Network Security Fundamentals</li>
-                <li>Penetration Testing Basics</li>
-            </ul>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-bg">
+        <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Kamanzi Thierry</h1>
+        <div class="hero-tagline">
+            <span class="static-text">I'm a </span>
+            <span class="typed-text" id="typed"></span><span class="cursor">|</span>
         </div>
-        <div class="skill">
-            <h3>Software Engineering</h3>
-            <ul>
-                <li>Java & Spring Boot REST API</li>
-                <li>Hibernate & JPA</li>
-                <li>Oracle 21c Database</li>
-                <li>SQL & PL/SQL</li>
-                <li>HTML, CSS, JS</li>
-            </ul>
+        <p class="hero-bio">Building secure systems at the intersection of software engineering and cybersecurity.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <a href="cv/CURRICULUM VITAE.pdf" class="btn btn-ghost" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Specializations</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-indicator">
+        <span>Scroll down</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">01. About</span>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Dedicated <strong>Software Engineer</strong> with a strong foundation in cybersecurity. I specialize in building secure, efficient software solutions while applying industry best practices in network security, risk mitigation, and threat analysis.</p>
+                <p>My dual focus on software development and cybersecurity lets me approach problems from both a builder's and a defender's perspective — writing code that's not just functional, but resilient against modern threats.</p>
+                <p>Passionate about contributing to innovative software projects in secure environments, bridging the gap between development and security operations.</p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Security First</h4>
+                    <p>Every solution I build has security considerations built in from the ground up.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Clean Code</h4>
+                    <p>Maintainable, well-structured code following SOLID principles.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h4>Network Aware</h4>
+                    <p>Deep understanding of network architectures and security protocols.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Always Learning</h4>
+                    <p>Continuously expanding skills across cybersecurity and software engineering.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-        <img src="images/wazuh-ui-ruleset.png" alt="Wazuh Project">
-        <h3>Wazuh SIEM Deployment</h3>
-        <p>Installed Wazuh all-in-one deployment, connected remote agents securely using ZeroTier, monitored logs.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="images/Oracles.jpg" alt="Oracle Project">
-        <h3>Oracle 21c PDB Management</h3>
-        <p>Created and managed Pluggable Databases using SQL Developer and CLI. Implemented user roles and DB tasks.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="images/spring.png" alt="Spring Boot Project">
-        <h3>Spring Boot REST API</h3>
-        <p>Developed full CRUD e-commerce API using Spring Boot, Hibernate, and JPA.</p>
+<!-- Skills Section -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">02. Skills</span>
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-shield-halved"></i> Cybersecurity</h3>
+                <div class="skill-tags">
+                    <span class="tag">Wazuh SIEM</span>
+                    <span class="tag">ZeroTier</span>
+                    <span class="tag">BIND DNS</span>
+                    <span class="tag">Linux Hardening</span>
+                    <span class="tag">FreeBSD</span>
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Penetration Testing</span>
+                    <span class="tag">Log Analysis</span>
+                    <span class="tag">Threat Detection</span>
+                    <span class="tag">Firewalls &amp; WAF</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Software Engineering</h3>
+                <div class="skill-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">Hibernate &amp; JPA</span>
+                    <span class="tag">Oracle 21c</span>
+                    <span class="tag">SQL &amp; PL/SQL</span>
+                    <span class="tag">PHP &amp; Laravel</span>
+                    <span class="tag">HTML / CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap 5</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+                <div class="skill-tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">FreeBSD</span>
+                    <span class="tag">SQL Developer</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">Postman</span>
+                    <span class="tag">XAMPP</span>
+                    <span class="tag">Barracuda</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Google IT Support Professional Certificate</li>
-        <li>Practical Cyber Security Offensive Certificate</li>
-        <li>Practical Cyber Security Defensive Certificate</li>
-        <li>Network Security Association (NSE1)</li>
-        <li>Advanced Network Operation II </li>
-        <li>Cybersecurity Fundamental certificate</li>
-        <li>Customer Relationship Management Certificate</li>
-        <li>Barracuda-Web-Security-Gateway</li>
-        <li>Barracuda-Email-Security-Gateway</li>
-        <li>Barracuda-Web-Application-Firewall</li>
-        <li>Barracuda-Web-Application-Firewall</li>
-    </ul>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">03. Projects</span>
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/wazuh-ui-ruleset.png" alt="Wazuh SIEM Deployment">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Cybersecurity</span>
+                    <h3>Wazuh SIEM Deployment</h3>
+                    <p>Deployed an all-in-one Wazuh SIEM solution, connected remote agents securely using ZeroTier overlay networking, and configured custom log monitoring and alerting rules.</p>
+                    <div class="project-tags">
+                        <span>Wazuh</span>
+                        <span>ZeroTier</span>
+                        <span>Linux</span>
+                        <span>Log Analysis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Oracles.jpg" alt="Oracle 21c PDB Management">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Database</span>
+                    <h3>Oracle 21c PDB Management</h3>
+                    <p>Created and managed Pluggable Databases using SQL Developer and CLI. Implemented user roles, privilege management, backup strategies, and complex tasks with PL/SQL.</p>
+                    <div class="project-tags">
+                        <span>Oracle 21c</span>
+                        <span>SQL</span>
+                        <span>PL/SQL</span>
+                        <span>DBA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/spring.png" alt="Spring Boot REST API">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Backend</span>
+                    <h3>Spring Boot REST API</h3>
+                    <p>Designed and developed a full CRUD e-commerce REST API with Spring Boot, Hibernate ORM, and JPA. Implemented a clean layered architecture with controllers, services, and repositories.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Hibernate</span>
+                        <span>REST</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-green">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Full-Stack</span>
+                    <h3>Performance Management System</h3>
+                    <p>Designed and developed a web-based OKR &amp; KPI tracking platform. Led requirements gathering, database design, backend logic, and testing. Enables managers to set objectives, assign key results, monitor KPI progress, and generate performance reports.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-purple">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Frontend</span>
+                    <h3>NHIP Digital Inspection Monitoring Tool</h3>
+                    <p>Worked as Frontend Engineer on a platform to digitize health inspection processes. Built responsive interfaces, collaborated with backend developers on system requirements, conducted user training, and iteratively improved the UI based on end-user feedback.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Bootstrap 5</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Kamanz175@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Thierry710">github.com/Thierry710</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kamanzi-thierry-12ab4a261" target="_blank">linkedin.com/in/kamanzi-thierry-12ab4a261</a></p>
+<!-- Certifications Section -->
+<section id="certifications" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">04. Certifications</span>
+            <h2>Certifications &amp; Training</h2>
+        </div>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <h4>Google IT Support Professional</h4>
+                    <span class="cert-issuer">Google / Coursera</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-crosshairs"></i></div>
+                <div class="cert-info">
+                    <h4>Practical Cyber Security Offensive</h4>
+                    <span class="cert-issuer">Cybersecurity Training</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="cert-info">
+                    <h4>Practical Cyber Security Defensive</h4>
+                    <span class="cert-issuer">Cybersecurity Training</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="cert-info">
+                    <h4>Network Security Association NSE1</h4>
+                    <span class="cert-issuer">Fortinet / NSA</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-server"></i></div>
+                <div class="cert-info">
+                    <h4>Advanced Network Operation II</h4>
+                    <span class="cert-issuer">Network Training</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-lock"></i></div>
+                <div class="cert-info">
+                    <h4>Cybersecurity Fundamentals</h4>
+                    <span class="cert-issuer">Security Training</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-users"></i></div>
+                <div class="cert-info">
+                    <h4>Customer Relationship Management</h4>
+                    <span class="cert-issuer">CRM Training</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                <div class="cert-info">
+                    <h4>Barracuda Web Security Gateway</h4>
+                    <span class="cert-issuer">Barracuda Networks</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-envelope"></i></div>
+                <div class="cert-info">
+                    <h4>Barracuda Email Security Gateway</h4>
+                    <span class="cert-issuer">Barracuda Networks</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><i class="fas fa-fire"></i></div>
+                <div class="cert-info">
+                    <h4>Barracuda Web Application Firewall</h4>
+                    <span class="cert-issuer">Barracuda Networks</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">05. Contact</span>
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="mailto:Kamanz175@gmail.com" class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">Kamanz175@gmail.com</span>
+                    </div>
+                    <i class="fas fa-external-link-alt contact-arrow"></i>
+                </a>
+                <a href="https://github.com/Thierry710" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <div class="contact-text">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/Thierry710</span>
+                    </div>
+                    <i class="fas fa-external-link-alt contact-arrow"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kamanzi-thierry-12ab4a261" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="contact-text">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">kamanzi-thierry</span>
+                    </div>
+                    <i class="fas fa-external-link-alt contact-arrow"></i>
+                </a>
+            </div>
+            <div class="contact-cta">
+                <a href="mailto:Kamanz175@gmail.com" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i> Send Me a Message
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>© 2026 Kamanzi Thierry | Cybersecurity & Software Engineering</p>
+    <div class="footer-content">
+        <a href="#home" class="footer-logo">KT<span>.</span></a>
+        <p>© 2026 Kamanzi Thierry · Cybersecurity &amp; Software Engineering</p>
+        <div class="footer-socials">
+            <a href="https://github.com/Thierry710" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kamanzi-thierry-12ab4a261" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:Kamanz175@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
 </footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>
