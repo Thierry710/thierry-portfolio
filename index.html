@@ -54,7 +54,7 @@
         </div>
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-number">9</span>
+                <span class="stat-number">11</span>
                 <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
@@ -175,6 +175,69 @@
             <p class="section-sub">What I built, how I built it, and what it delivered.</p>
         </div>
         <div class="projects-grid">
+
+            <!-- Umurabyo -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-blue"><i class="fas fa-truck-fast"></i></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Full-Stack &middot; Team Project</span>
+                    <h3>Umurabyo Smart Delivery Platform</h3>
+                    <p class="project-did"><strong>What I did:</strong> Part of the team building a multi-tenant delivery-management platform where delivery companies manage drivers, vehicles, GPS devices, orders and dispatch. I worked on the web portal and the platform admin console, and on the billing, notifications, observability and security work behind them.</p>
+                    <ul class="project-achievements">
+                        <li>Built the company web portal: dispatch, drivers, vehicles, branches, GPS tracker requests, team and settings</li>
+                        <li>Built the admin console: tenants, subscriptions, plans and payments, devices and provisioning, system health and audit screens</li>
+                        <li>Subscriptions, invoicing and manual payments, plus an inbox and notification dispatcher</li>
+                        <li>Tracing, scrubbed logs, alert rules and dashboards, then security hardening, audit integrity, backup and recovery drill</li>
+                        <li>Multi-country by design: each company carries its own country, currency, timezone and locale</li>
+                    </ul>
+                    <div class="project-tags"><span>TypeScript</span><span>Monorepo</span><span>PostgreSQL</span><span>Docker</span><span>Observability</span></div>
+                    <span class="project-note"><i class="fas fa-lock"></i> Private repository &middot; still in active development</span>
+                </div>
+            </div>
+
+            <!-- eBuzima / Frappe Healthcare -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-green"><i class="fas fa-hospital"></i></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Healthcare &middot; Team Project</span>
+                    <h3>eBuzima Healthcare Platform (Frappe / ERPNext)</h3>
+                    <p class="project-did"><strong>What I did:</strong> Developing a customised ERPNext + Frappe Healthcare hospital information system for Rwanda's health sector. I'm still working on it.</p>
+                    <ul class="project-achievements">
+                        <li>Converted NCD Screening, NCD Management and Mental Health Care into custom DocTypes</li>
+                        <li>Built clinical worklist dashboards (NCD, ANC and maternity, family planning, laboratory) with stat cards and patient file views</li>
+                        <li>Demo-data seeding so every dashboard has realistic rows, switchable per site</li>
+                        <li>Branding and sidebar work: hid stock ERPNext workspaces and gave each desk its own icon</li>
+                        <li>Fixed the CI/CD pipeline so only merges to main deploy and runs no longer cancel each other</li>
+                    </ul>
+                    <div class="project-tags"><span>Frappe</span><span>ERPNext</span><span>Python</span><span>Docker</span><span>GitHub Actions</span></div>
+                    <span class="project-note"><i class="fas fa-lock"></i> Private repository &middot; still in active development</span>
+                </div>
+            </div>
+
+            <!-- ZiSchool OS -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-amber"><i class="fas fa-school"></i></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Full-Stack &middot; Team Project</span>
+                    <h3>ZiSchool OS</h3>
+                    <p class="project-did"><strong>What I did:</strong> Contributed to a multi-tenant education operating system, a browser-based "desktop" that hosts a school's apps (student affairs, finance, attendance, examination, communication).</p>
+                    <ul class="project-achievements">
+                        <li>Built Rwanda Education Board features: streams, second-sitting marks, grade points and Ministry-format report cards</li>
+                        <li>Per-subject national weights and an examined-nationally setting</li>
+                        <li>Guardian records with ID, address and phone, picking from parents on file, and spreadsheet import</li>
+                        <li>Absence alerts to guardians, and a backup snapshot before any data purge</li>
+                        <li>Multilingual wording (English, French, Swahili)</li>
+                    </ul>
+                    <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>Fastify</span><span>PostgreSQL</span><span>RBAC</span></div>
+                    <span class="project-note"><i class="fas fa-lock"></i> Private repository &middot; still in active development</span>
+                </div>
+            </div>
 
             <!-- Online Voting System -->
             <div class="project-card">
@@ -306,12 +369,16 @@
                 <div class="project-info">
                     <span class="project-category">Full-Stack</span>
                     <h3>Performance Management System</h3>
-                    <p class="project-did"><strong>What I did:</strong> Designed and developed a web-based OKR &amp; KPI tracking platform. Led requirements gathering, database design, backend logic and testing.</p>
+                    <p class="project-did"><strong>What I did:</strong> Designed and developed a web-based OKR &amp; KPI tracking platform as a module of a Laravel business-management system. Led requirements gathering, database design, backend logic and testing.</p>
                     <ul class="project-achievements">
                         <li>Managers set objectives and assign key results</li>
                         <li>Live KPI progress monitoring and performance reports</li>
+                        <li>Added a Kanban board, project members and permission-controlled documentation access</li>
+                        <li>Built a payment voucher with Excel export and a rich-text documentation editor</li>
+                        <li>Fixed the time-off module: calendar actions, leave creation, state badges, null-safety and query scoping</li>
                     </ul>
                     <div class="project-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                    <span class="project-note"><i class="fas fa-lock"></i> Company project &middot; code not public</span>
                 </div>
             </div>
 
@@ -326,9 +393,12 @@
                     <p class="project-did"><strong>What I did:</strong> Frontend Engineer on a platform that digitises health inspection processes.</p>
                     <ul class="project-achievements">
                         <li>Built responsive interfaces and worked with backend developers on system requirements</li>
+                        <li>Role-based access control: permission-driven UI, role and user management</li>
+                        <li>Compliance questionnaires with sections, skip logic and ordering, plus facility-type and user management</li>
                         <li>Trained end users and iteratively improved the UI from their feedback</li>
                     </ul>
-                    <div class="project-tags"><span>JavaScript</span><span>Bootstrap 5</span><span>HTML5 / CSS3</span><span>REST API</span></div>
+                    <div class="project-tags"><span>TypeScript</span><span>React</span><span>Tailwind</span><span>REST API</span></div>
+                    <span class="project-note"><i class="fas fa-lock"></i> Company project &middot; code not public</span>
                 </div>
             </div>
 
