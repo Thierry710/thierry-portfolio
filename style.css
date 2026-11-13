@@ -950,3 +950,66 @@ footer p {
     .hero-stats { gap: 20px; }
     .stat-number { font-size: 1.6rem; }
 }
+
+/* ============================================
+   PROJECT DETAILS (what I did / achieved)
+   ============================================ */
+.section-sub { color: var(--text-secondary); margin-top: 10px; font-size: 0.95rem; }
+
+.placeholder-blue  { background: linear-gradient(135deg, #07121f 0%, #0b1d33 50%, #08182b 100%); }
+.placeholder-amber { background: linear-gradient(135deg, #1f1507 0%, #2a1c0b 50%, #211608 100%); }
+.placeholder-red   { background: linear-gradient(135deg, #1f0a0a 0%, #2a0e0e 50%, #200909 100%); }
+
+.project-info p.project-did { margin-bottom: 14px; }
+.project-did strong { color: var(--text-primary); }
+
+.project-achievements {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.project-achievements li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.83rem;
+    line-height: 1.6;
+}
+
+.project-achievements li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 0.7rem;
+    color: var(--accent);
+}
+
+.project-achievements code {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent);
+}
+
+.project-repo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.project-repo:hover { text-decoration: underline; }
+
+.projects-more { text-align: center; margin-top: 40px; }
+.projects-more a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.projects-more a:hover { text-decoration: underline; }
+
+.project-image img.shot { object-position: top left; }

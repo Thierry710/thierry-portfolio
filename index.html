@@ -54,7 +54,7 @@
         </div>
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-number">3+</span>
+                <span class="stat-number">9</span>
                 <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
@@ -172,118 +172,168 @@
         <div class="section-header">
             <span class="section-tag">03. Projects</span>
             <h2>Featured Projects</h2>
+            <p class="section-sub">What I built, how I built it, and what it delivered.</p>
         </div>
         <div class="projects-grid">
+
+            <!-- Online Voting System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-blue"><i class="fas fa-check-to-slot"></i></div>
+                    <div class="project-overlay"><a href="https://github.com/Thierry710/online-voting-system" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Full-Stack</span>
+                    <h3>Online Voting System</h3>
+                    <p class="project-did"><strong>What I did:</strong> Built a full-stack voting platform with Spring Boot 3, Spring Security and PostgreSQL, with both a Thymeleaf web UI and a REST API tested in Postman.</p>
+                    <ul class="project-achievements">
+                        <li>Role-based access for Admin, Candidate and Voter</li>
+                        <li>Designed a 10-entity ERD covering a 5-level Rwanda location hierarchy (Province to Village)</li>
+                        <li>Users store only a village ID; the full location chain is resolved automatically</li>
+                        <li>Pagination and sorting, plus One-to-One, One-to-Many and Many-to-Many relationships</li>
+                        <li><code>existsBy()</code> duplicate checks and a JPQL query to find users by province code or name</li>
+                    </ul>
+                    <div class="project-tags"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>Thymeleaf</span></div>
+                    <a href="https://github.com/Thierry710/online-voting-system" target="_blank" rel="noopener" class="project-repo"><i class="fab fa-github"></i> View repository</a>
+                </div>
+            </div>
+
+            <!-- Wazuh -->
             <div class="project-card">
                 <div class="project-image">
                     <img src="images/wazuh-ui-ruleset.png" alt="Wazuh SIEM Deployment">
-                    <div class="project-overlay">
-                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="project-info">
                     <span class="project-category">Cybersecurity</span>
                     <h3>Wazuh SIEM Deployment</h3>
-                    <p>Deployed an all-in-one Wazuh SIEM solution, connected remote agents securely using ZeroTier overlay networking, and configured custom log monitoring and alerting rules.</p>
-                    <div class="project-tags">
-                        <span>Wazuh</span>
-                        <span>ZeroTier</span>
-                        <span>Linux</span>
-                        <span>Log Analysis</span>
-                    </div>
+                    <p class="project-did"><strong>What I did:</strong> Deployed an all-in-one Wazuh SIEM and connected remote agents over a ZeroTier overlay network.</p>
+                    <ul class="project-achievements">
+                        <li>Remote agents reporting securely into a central SIEM</li>
+                        <li>Configured custom log monitoring and alerting rules</li>
+                    </ul>
+                    <div class="project-tags"><span>Wazuh</span><span>ZeroTier</span><span>Linux</span><span>Log Analysis</span></div>
                 </div>
             </div>
+
+            <!-- Oracle -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/Oracles.jpg" alt="Oracle 21c PDB Management">
-                    <div class="project-overlay">
-                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <img class="shot" src="images/oracle-oem.png" alt="Oracle Enterprise Manager dashboard showing the created PDB">
+                    <div class="project-overlay"><a href="https://github.com/Thierry710/oracle-pdb-management" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a></div>
                 </div>
                 <div class="project-info">
                     <span class="project-category">Database</span>
                     <h3>Oracle 21c PDB Management</h3>
-                    <p>Created and managed Pluggable Databases using SQL Developer and CLI. Implemented user roles, privilege management, backup strategies, and complex tasks with PL/SQL.</p>
-                    <div class="project-tags">
-                        <span>Oracle 21c</span>
-                        <span>SQL</span>
-                        <span>PL/SQL</span>
-                        <span>DBA</span>
-                    </div>
+                    <p class="project-did"><strong>What I did:</strong> Administered Oracle 21c Multitenant: created and managed Pluggable Databases from SQL*Plus and Oracle Enterprise Manager.</p>
+                    <ul class="project-achievements">
+                        <li>Created and opened a main PDB, then verified it through <code>V$PDBS</code></li>
+                        <li>Created a user in the PDB with CONNECT and RESOURCE privileges</li>
+                        <li>Ran the full PDB lifecycle: create, close, then drop a temporary PDB including datafiles</li>
+                        <li>Confirmed everything in the OEM dashboard</li>
+                        <li>Diagnosed and fixed an ORA-01031 privilege error by reconnecting as SYSDBA in CDB$ROOT</li>
+                    </ul>
+                    <div class="project-tags"><span>Oracle 21c</span><span>SQL*Plus</span><span>OEM</span><span>DBA</span></div>
+                    <a href="https://github.com/Thierry710/oracle-pdb-management" target="_blank" rel="noopener" class="project-repo"><i class="fab fa-github"></i> View repository</a>
                 </div>
             </div>
+
+            <!-- SQL window functions -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/spring.png" alt="Spring Boot REST API">
-                    <div class="project-overlay">
-                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <img class="shot" src="images/sql-rank.png" alt="RANK window function query and results in pgAdmin">
+                    <div class="project-overlay"><a href="https://github.com/Thierry710/sql-window-functions-analysis" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Data Analysis</span>
+                    <h3>SQL JOINs &amp; Window Functions</h3>
+                    <p class="project-did"><strong>What I did:</strong> Analysed a retail dataset (customers, products, sales) to answer a marketing and inventory business problem.</p>
+                    <ul class="project-achievements">
+                        <li>Applied five JOIN types: INNER, LEFT, RIGHT, FULL and SELF</li>
+                        <li>Used RANK, SUM OVER, LAG and NTILE for rankings, running totals, month-over-month growth and customer segments</li>
+                        <li>Produced descriptive, diagnostic and prescriptive findings: focus marketing on top regions and loyal customers</li>
+                    </ul>
+                    <div class="project-tags"><span>SQL</span><span>Window Functions</span><span>PostgreSQL</span><span>Analytics</span></div>
+                    <a href="https://github.com/Thierry710/sql-window-functions-analysis" target="_blank" rel="noopener" class="project-repo"><i class="fab fa-github"></i> View repository</a>
+                </div>
+            </div>
+
+            <!-- REST API -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="shot" src="images/api-view-all.png" alt="Postman GET /api/products/viewAll returning 200 OK">
+                    <div class="project-overlay"><a href="https://github.com/Thierry710/ecommerce-rest-api" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a></div>
                 </div>
                 <div class="project-info">
                     <span class="project-category">Backend</span>
-                    <h3>Spring Boot REST API</h3>
-                    <p>Designed and developed a full CRUD e-commerce REST API with Spring Boot, Hibernate ORM, and JPA. Implemented a clean layered architecture with controllers, services, and repositories.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Hibernate</span>
-                        <span>REST</span>
-                    </div>
+                    <h3>E-Commerce REST API</h3>
+                    <p class="project-did"><strong>What I did:</strong> Designed a product-management REST API with Spring Boot and JPA, using a layered Controller / Service / Repository / Model architecture.</p>
+                    <ul class="project-achievements">
+                        <li>Full CRUD: add, view all, view by ID, update and delete</li>
+                        <li>Duplicate-ID checks and correct HTTP status codes (conflict, not found)</li>
+                        <li>Every endpoint tested in Postman</li>
+                        <li>Resolved Spring Web annotation import issues to get all operations working</li>
+                    </ul>
+                    <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>Postman</span></div>
+                    <a href="https://github.com/Thierry710/ecommerce-rest-api" target="_blank" rel="noopener" class="project-repo"><i class="fab fa-github"></i> View repository</a>
                 </div>
             </div>
+
+            <!-- Java OOP -->
             <div class="project-card">
                 <div class="project-image">
-                    <div class="project-img-placeholder placeholder-green">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <div class="project-img-placeholder placeholder-red"><i class="fab fa-java"></i></div>
+                    <div class="project-overlay"><a href="https://github.com/Thierry710/java-oop-fundamentals" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Software Engineering</span>
+                    <h3>Java OOP Fundamentals</h3>
+                    <p class="project-did"><strong>What I did:</strong> Implemented classes, inheritance, polymorphism and encapsulation across ten independent Java console applications (hospital, school, invoicing and more).</p>
+                    <ul class="project-achievements">
+                        <li>10 self-contained modules, each with entities, custom exceptions and business-rule validation</li>
+                        <li>An interactive runner plus a deterministic test harness for every module</li>
+                        <li>A shared <code>StudentOutput</code> utility that wraps <code>System.out</code> to prefix all output centrally</li>
+                    </ul>
+                    <div class="project-tags"><span>Java 17</span><span>OOP</span><span>Exceptions</span><span>Testing</span></div>
+                    <a href="https://github.com/Thierry710/java-oop-fundamentals" target="_blank" rel="noopener" class="project-repo"><i class="fab fa-github"></i> View repository</a>
+                </div>
+            </div>
+
+            <!-- Performance Management -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-img-placeholder placeholder-green"><i class="fas fa-chart-line"></i></div>
                 </div>
                 <div class="project-info">
                     <span class="project-category">Full-Stack</span>
                     <h3>Performance Management System</h3>
-                    <p>Designed and developed a web-based OKR &amp; KPI tracking platform. Led requirements gathering, database design, backend logic, and testing. Enables managers to set objectives, assign key results, monitor KPI progress, and generate performance reports.</p>
-                    <div class="project-tags">
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
+                    <p class="project-did"><strong>What I did:</strong> Designed and developed a web-based OKR &amp; KPI tracking platform. Led requirements gathering, database design, backend logic and testing.</p>
+                    <ul class="project-achievements">
+                        <li>Managers set objectives and assign key results</li>
+                        <li>Live KPI progress monitoring and performance reports</li>
+                    </ul>
+                    <div class="project-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
                 </div>
             </div>
+
+            <!-- NHIP -->
             <div class="project-card">
                 <div class="project-image">
-                    <div class="project-img-placeholder placeholder-purple">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <a href="https://github.com/Thierry710" target="_blank" class="project-link" aria-label="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <div class="project-img-placeholder placeholder-purple"><i class="fas fa-clipboard-check"></i></div>
                 </div>
                 <div class="project-info">
                     <span class="project-category">Frontend</span>
                     <h3>NHIP Digital Inspection Monitoring Tool</h3>
-                    <p>Worked as Frontend Engineer on a platform to digitize health inspection processes. Built responsive interfaces, collaborated with backend developers on system requirements, conducted user training, and iteratively improved the UI based on end-user feedback.</p>
-                    <div class="project-tags">
-                        <span>JavaScript</span>
-                        <span>Bootstrap 5</span>
-                        <span>HTML5 / CSS3</span>
-                        <span>REST API</span>
-                    </div>
+                    <p class="project-did"><strong>What I did:</strong> Frontend Engineer on a platform that digitises health inspection processes.</p>
+                    <ul class="project-achievements">
+                        <li>Built responsive interfaces and worked with backend developers on system requirements</li>
+                        <li>Trained end users and iteratively improved the UI from their feedback</li>
+                    </ul>
+                    <div class="project-tags"><span>JavaScript</span><span>Bootstrap 5</span><span>HTML5 / CSS3</span><span>REST API</span></div>
                 </div>
             </div>
+
         </div>
+        <p class="projects-more"><a href="https://github.com/Thierry710?tab=repositories" target="_blank" rel="noopener"><i class="fab fa-github"></i> See all repositories on GitHub</a></p>
     </div>
 </section>
 
